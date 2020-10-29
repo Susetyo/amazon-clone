@@ -32,7 +32,7 @@ function Header() {
                         className="header__option"
                     >
                         <span className="header__optionLineOne">
-                            Hello Guest
+                            Hello {user?.email || "Guest"}
                         </span>
                         <span className="header__optionLineTwo">
                             {user ? "Sign Out" : "Sign In"}
